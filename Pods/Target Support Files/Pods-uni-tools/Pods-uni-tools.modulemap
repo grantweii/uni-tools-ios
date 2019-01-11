@@ -1,0 +1,6 @@
+framework module Pods_uni_tools {
+  umbrella header "Pods-uni-tools-umbrella.h"
+
+  export *
+  module * { export * }
+}
