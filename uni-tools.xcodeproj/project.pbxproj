@@ -15,6 +15,9 @@
 		930F9D1221E3269D0055B46A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930F9D1021E3269D0055B46A /* LaunchScreen.storyboard */; };
 		930F9D1F21E5957C0055B46A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F9D1D21E5957C0055B46A /* Parse.framework */; };
 		930F9D2021E5957C0055B46A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F9D1E21E5957C0055B46A /* Bolts.framework */; };
+		932D191421E9700B008E3D45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D191321E9700B008E3D45 /* HomeViewController.swift */; };
+		932D191621E99FBE008E3D45 /* ClassroomFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D191521E99FBE008E3D45 /* ClassroomFinderViewController.swift */; };
+		932D191821E99FF7008E3D45 /* EnrolmentFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D191721E99FF7008E3D45 /* EnrolmentFinderViewController.swift */; };
 		938EFA2621E873CD00C5147C /* unitools_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 938EFA2521E873CD00C5147C /* unitools_logo.png */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		930F9D1321E3269D0055B46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		930F9D1D21E5957C0055B46A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		930F9D1E21E5957C0055B46A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		932D191321E9700B008E3D45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		932D191521E99FBE008E3D45 /* ClassroomFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomFinderViewController.swift; sourceTree = "<group>"; };
+		932D191721E99FF7008E3D45 /* EnrolmentFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolmentFinderViewController.swift; sourceTree = "<group>"; };
 		938EFA2521E873CD00C5147C /* unitools_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unitools_logo.png; path = ../../../Downloads/unitools_logo.png; sourceTree = "<group>"; };
 		CB3E1201B2896E7CD968FF18 /* Pods_uni_tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uni_tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12E25CA36B1BC2D0F9F238D /* Pods-uni-tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uni-tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-uni-tools/Pods-uni-tools.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,10 +80,13 @@
 				930F9D0721E3269B0055B46A /* AppDelegate.swift */,
 				930F9D0921E3269B0055B46A /* ViewController.swift */,
 				930F9D0B21E3269B0055B46A /* Main.storyboard */,
+				932D191721E99FF7008E3D45 /* EnrolmentFinderViewController.swift */,
+				932D191521E99FBE008E3D45 /* ClassroomFinderViewController.swift */,
 				938EFA2521E873CD00C5147C /* unitools_logo.png */,
 				930F9D0E21E3269D0055B46A /* Assets.xcassets */,
 				930F9D1021E3269D0055B46A /* LaunchScreen.storyboard */,
 				930F9D1321E3269D0055B46A /* Info.plist */,
+				932D191321E9700B008E3D45 /* HomeViewController.swift */,
 			);
 			path = "uni-tools";
 			sourceTree = "<group>";
@@ -224,6 +233,9 @@
 			files = (
 				930F9D0A21E3269B0055B46A /* ViewController.swift in Sources */,
 				930F9D0821E3269B0055B46A /* AppDelegate.swift in Sources */,
+				932D191821E99FF7008E3D45 /* EnrolmentFinderViewController.swift in Sources */,
+				932D191621E99FBE008E3D45 /* ClassroomFinderViewController.swift in Sources */,
+				932D191421E9700B008E3D45 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

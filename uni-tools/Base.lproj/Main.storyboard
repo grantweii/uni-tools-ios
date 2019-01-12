@@ -70,10 +70,85 @@
                         <outlet property="loginButton" destination="Qcl-BW-fBl" id="Feg-Js-oHI"/>
                         <outlet property="passwordTextField" destination="ciJ-IC-omQ" id="RAi-pC-B0y"/>
                         <outlet property="signupButton" destination="Rgf-4O-Ptt" id="1cw-8x-Bje"/>
+                        <segue destination="hXY-O4-Qhe" kind="show" identifier="showHome" id="a8W-o2-AL7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="49" y="74"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="sSU-Ox-RDW">
+            <objects>
+                <viewController storyboardIdentifier="homeViewController" id="hXY-O4-Qhe" customClass="HomeViewController" customModule="uni_tools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="riu-Ob-8DG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDu-dM-XTU">
+                                <rect key="frame" x="129" y="157" width="117" height="30"/>
+                                <state key="normal" title="Enrolment Finder"/>
+                                <connections>
+                                    <action selector="enrolmentClicked:" destination="hXY-O4-Qhe" eventType="touchUpInside" id="gmc-kQ-nJd"/>
+                                    <segue destination="cbM-fy-vye" kind="show" id="8uT-WH-6Bo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzY-gm-qcK">
+                                <rect key="frame" x="127.5" y="87" width="120" height="30"/>
+                                <state key="normal" title="Classroom Finder"/>
+                                <connections>
+                                    <action selector="classroomClicked:" destination="hXY-O4-Qhe" eventType="touchUpInside" id="e1c-dg-Qdw"/>
+                                    <segue destination="XSW-Vs-v0o" kind="show" id="rNr-JT-acr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DDu-dM-XTU" firstAttribute="centerX" secondItem="riu-Ob-8DG" secondAttribute="centerX" id="9LA-wC-cfr"/>
+                            <constraint firstItem="GzY-gm-qcK" firstAttribute="centerX" secondItem="riu-Ob-8DG" secondAttribute="centerX" id="FiP-Nm-lRJ"/>
+                            <constraint firstItem="GzY-gm-qcK" firstAttribute="top" secondItem="nuB-rf-q00" secondAttribute="top" constant="67" id="buz-aB-eMt"/>
+                            <constraint firstItem="DDu-dM-XTU" firstAttribute="top" secondItem="GzY-gm-qcK" secondAttribute="bottom" constant="40" id="wp7-xc-t4q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nuB-rf-q00"/>
+                    </view>
+                    <connections>
+                        <outlet property="classroomButton" destination="DDu-dM-XTU" id="TqE-vx-hb5"/>
+                        <outlet property="enrolmentButton" destination="DDu-dM-XTU" id="k6t-GW-cW6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xe0-rW-sBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="75"/>
+        </scene>
+        <!--Classroom Finder View Controller-->
+        <scene sceneID="7j2-8m-0bf">
+            <objects>
+                <viewController id="XSW-Vs-v0o" customClass="ClassroomFinderViewController" customModule="uni_tools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mh8-w7-VjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BFp-Gc-lWP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbb-av-bKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="-188"/>
+        </scene>
+        <!--Enrolment Finder View Controller-->
+        <scene sceneID="Kab-Z0-ItR">
+            <objects>
+                <viewController id="cbM-fy-vye" customClass="EnrolmentFinderViewController" customModule="uni_tools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fYv-hS-XaL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rYg-NY-tW0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="674-dE-bZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505" y="475"/>
         </scene>
     </scenes>
     <resources>

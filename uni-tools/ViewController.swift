@@ -17,6 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var signupButton: UIButton!
     
+    override func viewDidAppear(_ animated: Bool) {
+        if PFUser.current() != nil {
+            self.performSegue(withIdentifier: "showHome", sender: self)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -44,6 +50,7 @@ class ViewController: UIViewController {
                 self.createAlert(title: "Login Error", message: displayErrorMessage)
             } else {
                 print("user logged in")
+                self.performSegue(withIdentifier: "showHome", sender: self)
             }
         })
         
@@ -80,6 +87,7 @@ class ViewController: UIViewController {
                 self.createAlert(title: "Signup Error", message: displayErrorMessage)
             } else {
                 print("user signed up")
+                self.performSegue(withIdentifier: "showHome", sender: self)
             }
         }
     }
