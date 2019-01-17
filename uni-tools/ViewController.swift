@@ -19,7 +19,9 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if PFUser.current() != nil {
-            self.performSegue(withIdentifier: "showHome", sender: self)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "homeSegue", sender: self)
+            }
         }
     }
     
@@ -87,7 +89,7 @@ class ViewController: UIViewController {
                 self.createAlert(title: "Signup Error", message: displayErrorMessage)
             } else {
                 print("user signed up")
-                self.performSegue(withIdentifier: "showHome", sender: self)
+                self.performSegue(withIdentifier: "homeSegue", sender: self)
             }
         }
     }

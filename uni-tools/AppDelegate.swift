@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         Parse.initialize(with: configuration)
         
-        PFUser.enableAutomaticUser()
+//        PFUser.enableAutomaticUser()
         
         let defaultACL = PFACL()
         defaultACL.hasPublicReadAccess = true // If you would like all objects to be private by default, remove this line.
