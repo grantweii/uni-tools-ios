@@ -16,15 +16,5 @@ class CourseCell: UITableViewCell {
     func setCourse(course: Course) {
         courseTitleLabel.text = course.title
     }
-    
-//    func createAlert(title: String, message: String) -> Bool {
-//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//
-//        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler:{ (action) in return true
-//        }))
-//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:{ (action) in return false
-//        }))
-//        present(alert, animated: true, completion: nil)
-//    }
-    
+
 }

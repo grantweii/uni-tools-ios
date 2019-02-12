@@ -8,9 +8,10 @@
 
 import UIKit
 import Parse
+import Onboard
 
 class ViewController: UIViewController {
-
+    
     var activityIndicator = UIActivityIndicatorView()
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
@@ -18,9 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet var signupButton: UIButton!
     
     override func viewDidAppear(_ animated: Bool) {
+        print("VC viewdidappear")
         if PFUser.current() != nil {
             DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "homeSegue", sender: self)
+                self.navigateToHome()
             }
         }
     }
@@ -52,10 +54,9 @@ class ViewController: UIViewController {
                 self.createAlert(title: "Login Error", message: displayErrorMessage)
             } else {
                 print("user logged in")
-                self.performSegue(withIdentifier: "showHome", sender: self)
+                self.navigateToHome()
             }
         })
-        
     }
     
     @IBAction func signupClicked(_ sender: Any) {
@@ -86,12 +87,21 @@ class ViewController: UIViewController {
                 if let errorMessage = (error! as NSError).userInfo["error"] as? String {
                     displayErrorMessage = errorMessage
                 }
+                print("error")
                 self.createAlert(title: "Signup Error", message: displayErrorMessage)
             } else {
                 print("user signed up")
-                self.performSegue(withIdentifier: "homeSegue", sender: self)
+                let onboardVC = self.generateOnboardingViewController()
+                self.present(onboardVC, animated: true, completion: nil)
             }
         }
+    }
+    
+    func navigateToHome() {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = mainStoryboard.instantiateViewController(withIdentifier: "homeViewController")
+        self.present(homeViewController, animated: true, completion: nil)
+//        navigationController?.pushViewController(homeViewController, animated: true)
     }
     
     
@@ -102,5 +112,32 @@ class ViewController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func generateOnboardingViewController() -> OnboardingViewController{
+        // Generate the first page...
+        let firstPage: OnboardingContentViewController = OnboardingContentViewController(title: "What A Beautiful Photo", body: "This city background image is so beautiful", image: UIImage(named:
+            "rocket"), buttonText: "Enable Location Services") {
+        }
+        
+        // Generate the second page...
+        let secondPage: OnboardingContentViewController = OnboardingContentViewController(title: "I'm So Sorry", body: "I can't get over the nice blurry background photo.", image: UIImage(named:
+            "rocket"), buttonText: "Connect With Facebook") {
+        }
+        
+        // Generate the third page, and when the user hits the button we want to handle that the onboarding
+        // process has been completed.
+        let thirdPage: OnboardingContentViewController = OnboardingContentViewController(title: "Seriously Though", body: "Kudos to the photographer.", image: UIImage(named:
+            "rocket"), buttonText: "Let's Get Started") {
+                self.dismiss(animated: true, completion: nil)
+        }
+        
+        // Create the onboarding controller with the pages and return it.
+        let onboardingVC: OnboardingViewController = OnboardingViewController(backgroundImage: UIImage(named: "rocket"), contents: [firstPage, secondPage, thirdPage])
+        
+        print("returned")
+        
+        return onboardingVC
+    }
+    
 }
 

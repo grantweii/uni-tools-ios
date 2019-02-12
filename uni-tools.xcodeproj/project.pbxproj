@@ -20,6 +20,7 @@
 		932D191621E99FBE008E3D45 /* ClassroomFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D191521E99FBE008E3D45 /* ClassroomFinderViewController.swift */; };
 		932D191821E99FF7008E3D45 /* EnrolmentFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D191721E99FF7008E3D45 /* EnrolmentFinderViewController.swift */; };
 		932D191A21EC7721008E3D45 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D191921EC7721008E3D45 /* CourseCell.swift */; };
+		935E67B021F43676005F3B97 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E67AF21F43676005F3B97 /* OnboardingVC.swift */; };
 		938EFA2621E873CD00C5147C /* unitools_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 938EFA2521E873CD00C5147C /* unitools_logo.png */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		932D191521E99FBE008E3D45 /* ClassroomFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomFinderViewController.swift; sourceTree = "<group>"; };
 		932D191721E99FF7008E3D45 /* EnrolmentFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolmentFinderViewController.swift; sourceTree = "<group>"; };
 		932D191921EC7721008E3D45 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		935E67AF21F43676005F3B97 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		938EFA2521E873CD00C5147C /* unitools_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unitools_logo.png; path = ../../../Downloads/unitools_logo.png; sourceTree = "<group>"; };
 		CB3E1201B2896E7CD968FF18 /* Pods_uni_tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uni_tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12E25CA36B1BC2D0F9F238D /* Pods-uni-tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uni-tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-uni-tools/Pods-uni-tools.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				930F9D1E21E5957C0055B46A /* Bolts.framework */,
 				930F9D1D21E5957C0055B46A /* Parse.framework */,
 				932D191921EC7721008E3D45 /* CourseCell.swift */,
+				935E67AF21F43676005F3B97 /* OnboardingVC.swift */,
 				9325FF5821EC7C6500C4DB3F /* Course.swift */,
 				930F9D0721E3269B0055B46A /* AppDelegate.swift */,
 				930F9D0921E3269B0055B46A /* ViewController.swift */,
@@ -194,14 +197,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-uni-tools/Pods-uni-tools-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Onboard/Onboard.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Onboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -243,6 +250,7 @@
 				930F9D0821E3269B0055B46A /* AppDelegate.swift in Sources */,
 				932D191821E99FF7008E3D45 /* EnrolmentFinderViewController.swift in Sources */,
 				932D191621E99FBE008E3D45 /* ClassroomFinderViewController.swift in Sources */,
+				935E67B021F43676005F3B97 /* OnboardingVC.swift in Sources */,
 				932D191421E9700B008E3D45 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

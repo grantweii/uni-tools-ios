@@ -23,6 +23,14 @@ class HomeViewController: UIViewController {
         courses = getFollowedCourses()
         tableView.delegate = self
         tableView.dataSource = self
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("HOME VC viewdidappear")
+
+//        self.presentingViewController?.dismiss(animated: true, completion: nil)
+
     }
     
     func getFollowedCourses() -> [Course] {
