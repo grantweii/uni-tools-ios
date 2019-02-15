@@ -1,22 +1,30 @@
 PODS:
   - Bolts/Tasks (1.9.0)
+  - Onboard (2.3.3)
+  - paper-onboarding (5.0.0)
   - Parse (1.17.2):
     - Parse/Core (= 1.17.2)
   - Parse/Core (1.17.2):
     - Bolts/Tasks (~> 1.9)
 
 DEPENDENCIES:
+  - Onboard
+  - paper-onboarding
   - Parse
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Bolts
+    - Onboard
+    - paper-onboarding
     - Parse
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Onboard: 4d6e943e20bdd6bc229df967a347dd7514bc2a6f
+  paper-onboarding: a2e3a710fd27ac0b5635ec5490660e7ec09289b5
   Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
 
-PODFILE CHECKSUM: dc2bbce95e27875f8975d4eec077d2afe522dbed
+PODFILE CHECKSUM: 3c4052b0b4868ee3d036a90aa910ccb18632f343
 
 COCOAPODS: 1.5.3

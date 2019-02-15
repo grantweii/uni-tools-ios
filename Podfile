@@ -6,5 +6,7 @@ target 'uni-tools' do
 
   # Pods for uni-tools
     pod 'Parse'
+	pod 'paper-onboarding'
+	pod 'Onboard'
 
 end

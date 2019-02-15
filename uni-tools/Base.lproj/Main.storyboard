@@ -10,10 +10,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--OnboardingVC-->
+        <scene sceneID="Qyd-Gx-p6L">
+            <objects>
+                <viewController storyboardIdentifier="onboardingVC" id="njK-Yh-WOR" customClass="OnboardingVC" customModule="uni_tools" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSh-sB-17u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1049" y="73"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uni_tools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="uni_tools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +78,6 @@
                         <outlet property="loginButton" destination="Qcl-BW-fBl" id="Feg-Js-oHI"/>
                         <outlet property="passwordTextField" destination="ciJ-IC-omQ" id="RAi-pC-B0y"/>
                         <outlet property="signupButton" destination="Rgf-4O-Ptt" id="1cw-8x-Bje"/>
-                        <segue destination="hXY-O4-Qhe" kind="show" identifier="homeSegue" id="a8W-o2-AL7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -165,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xe0-rW-sBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="736.79999999999995" y="74.212893553223395"/>
+            <point key="canvasLocation" x="769" y="73"/>
         </scene>
         <!--Classroom Finder View Controller-->
         <scene sceneID="7j2-8m-0bf">
