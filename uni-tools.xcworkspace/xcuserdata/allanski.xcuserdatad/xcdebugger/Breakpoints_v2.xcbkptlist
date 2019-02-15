@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "uni-tools/ClassroomFinderViewController.swift"
+            timestampString = "571906289.973586"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "ClassroomFinderViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "uni_tools.ClassroomFinderViewController.building.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "uni-tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allanski/Downloads/uni-tools-ios/uni-tools/ClassroomFinderViewController.swift"
+                  timestampString = "571904807.772153"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "uni_tools.ClassroomFinderViewController.building.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "uni-tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allanski/Downloads/uni-tools-ios/uni-tools/ClassroomFinderViewController.swift"
+                  timestampString = "571904807.7779419"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "uni_tools.ClassroomFinderViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; uni_tools.ClassroomFinderViewController"
+                  moduleName = "uni-tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allanski/Downloads/uni-tools-ios/uni-tools/ClassroomFinderViewController.swift"
+                  timestampString = "571904807.7806489"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1028">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "uni_tools.ClassroomFinderViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;uni_tools.ClassroomFinderViewController&gt;"
+                  moduleName = "uni-tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allanski/Downloads/uni-tools-ios/uni-tools/ClassroomFinderViewController.swift"
+                  timestampString = "571904807.7829061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1000">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

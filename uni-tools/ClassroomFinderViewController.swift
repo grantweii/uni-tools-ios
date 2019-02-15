@@ -18,7 +18,7 @@ class ClassroomFinderViewController: UIViewController, UIPickerViewDataSource, U
     @IBOutlet weak var dayBox: UITextField!
     @IBOutlet weak var buildingBox: UITextField!
     
-    var startTime : String?
+    var startTime: String?
     var endTime: String?
     var day: String?
     var building: String?
